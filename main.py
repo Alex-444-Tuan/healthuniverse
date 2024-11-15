@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 from openai import OpenAI 
+import os 
 
 client = OpenAI(
-    api_key= st.secrets['OPENAI_API_KEY'],
+    apikey= os.environ.get("APIKEY"),
 )
 
 model="gpt-4-turbo-preview"
