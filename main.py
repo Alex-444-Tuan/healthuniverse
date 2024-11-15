@@ -13,8 +13,8 @@ temperature = 0.3
 max_tokens = 500
 
 messages = [
-        {"roles": "system", "content": "you are the counselor for college students."},
-        {"roles": "user", "content": "list out 10 ways to reduce stress"},
+        {"role": "system", "content": "you are the counselor for college students."},
+        {"role": "user", "content": "list out 10 ways to reduce stress"},
     ]
 
 def get_advice():
