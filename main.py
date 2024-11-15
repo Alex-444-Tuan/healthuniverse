@@ -5,7 +5,7 @@ from openai import OpenAI
 
 
 client = OpenAI(
-    apikey= st.secrets["APIKEY"],
+    api_key= st.secrets["OPENAI_API_KEY"],
 )
 
 model="gpt-4-turbo-preview"
